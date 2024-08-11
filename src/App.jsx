@@ -16,6 +16,7 @@ import Booking from "./pages/Booking"
 import CheckIn from "./pages/CheckIn"
 import ProtectedRoute from "./ui/ProtectedRoute"
 import { DarkModeProvider } from "./context/DarkModeContext"
+import SignUp from "./pages/SignUp"
 
 const queryClient =new QueryClient({defaultOptions:{
   // queries:{staleTime:60*100,}
@@ -44,6 +45,7 @@ function App() {
       <Route path="user" element={ <NewUsers/>} />
       </Route>
       <Route path="login" element={ <Login/>} />
+      <Route path="signup" element={ <SignUp/>} />
       <Route path="*" element={ <PageNotFound/>} />
 
     </Routes>
